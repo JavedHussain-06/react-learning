@@ -1,10 +1,11 @@
 interface button {
+  
 label : string,
 onClick : () => void,
 disabled ?: boolean
 }
 
-const Button = ( { label, onClick, disabled = false } : button) => {
+const Buttons = ( { label, onClick, disabled = false } : button) => {
   return (
     <button
       onClick={onClick}
@@ -18,4 +19,4 @@ const Button = ( { label, onClick, disabled = false } : button) => {
   );
 };
 
-export default Button;
+export default Buttons;
