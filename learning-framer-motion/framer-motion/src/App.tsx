@@ -1,9 +1,27 @@
-
+import { motion } from "motion/react"
+import Loading from "./components/Loading"
+import Ball from "./components/variants/Ball"
+import FlippingCard from "./components/variants/FlippingCard"
 const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <>
+    
+    {/* <motion.div className="box" animate={
+      {
+        scale: [1, 1.5, 1.5, 1, 1],
+        borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+        rotate: [0, 0, 270, 270, 0],
+        backgroundColor: ["#FF0000", "#00FF00", "#0000FF", "#FF0000"],
+      }
+    } 
+      transition={{repeat: Infinity, duration: 2 , delay: 0.5, ease: "easeInOut"}}
+    /> */}
+
+
+    {/* <Loading /> */}
+    <FlippingCard />
+    <Ball />
+    </>
   )
 }
 
