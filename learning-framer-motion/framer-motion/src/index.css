@@ -21,9 +21,9 @@ body{
     width: 100px;
     background-color: yellow;
     /* border-radius: 100%; */
-    border-top: white 5px solid;
+    /* border-top: white 5px solid;
     border-right: orange 5px solid;
     border-bottom: red 5px solid;
-    border-left: rgb(82, 30, 188) 5px solid;
+    border-left: rgb(82, 30, 188) 5px solid; */
     height: 100px;
 }
