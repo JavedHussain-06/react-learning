@@ -1,14 +1,18 @@
-import { motion } from "motion/react"
-import Loading from "./components/Loading"
-import Ball from "./components/variants/Ball"
-import Box from "./components/gesture/Box"
-import FlippingCard from "./components/variants/FlippingCard"
-import { AnimatedCard } from "./components/gesture/AnimatedCard"
+import { motion } from "motion/react";
+import Loading from "./components/Loading";
+import Ball from "./components/variants/Ball";
+import Box from "./components/gesture/Box";
+import FlippingCard from "./components/variants/FlippingCard";
+import { AnimatedCard } from "./components/gesture/AnimatedCard";
+import ImageGallery from "./components/gesture/ImageGallery";
+import { AnimatedShaped } from "./components/variants/AnimatedShaped";
+import StaggerAnimation from "./components/staggerAnimation/StaggerAnimation";
+import AnimatedGallery from "./components/staggerAnimation/AnimatedGallery";
+import RangeSlider from "./components/useMotion/RangeSlider";
 const App = () => {
   return (
     <>
-    
-    {/* <motion.div className="box" animate={
+      {/* <motion.div className="box" animate={
       {
         scale: [1, 1.5, 1.5, 1, 1],
         borderRadius: ["20%", "20%", "50%", "50%", "20%"],
@@ -19,14 +23,18 @@ const App = () => {
       transition={{repeat: Infinity, duration: 2 , delay: 0.5, ease: "easeInOut"}}
     /> */}
 
-
-    {/* <Loading /> */}
-    {/* <FlippingCard />
+      {/* <Loading /> */}
+      {/* <FlippingCard />
     <Ball /> */}
-    {/* <Box /> */}
-    <AnimatedCard />
+      {/* <Box /> */}
+      {/* <AnimatedCard /> */}
+      {/* <ImageGallery /> */}
+      {/* <AnimatedShaped /> */}
+      {/* <StaggerAnimation/> */}
+        {/* <AnimatedGallery /> */}
+        <RangeSlider />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
