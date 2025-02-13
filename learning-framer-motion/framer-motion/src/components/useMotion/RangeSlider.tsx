@@ -1,6 +1,7 @@
-import {motion, useMotionValue} from "motion/react"
+import {motion, useMotionValue, useSpring} from "motion/react"
 const RangeSlider = () => {
-    const scale = useMotionValue(1)
+    // const scale = useMotionValue(1)
+    const scale = useSpring(1)
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         scale.set(parseFloat(e.target.value))
     }

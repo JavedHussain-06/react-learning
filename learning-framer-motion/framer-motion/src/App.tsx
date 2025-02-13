@@ -9,6 +9,19 @@ import { AnimatedShaped } from "./components/variants/AnimatedShaped";
 import StaggerAnimation from "./components/staggerAnimation/StaggerAnimation";
 import AnimatedGallery from "./components/staggerAnimation/AnimatedGallery";
 import RangeSlider from "./components/useMotion/RangeSlider";
+import DragMeBox from "./components/useTransform/DragMeBox";
+import { AnimationScroll } from "./components/scrollAnimation/Animationscroll";
+import UseAnimationScroll from "./components/useScroll/useAnimationScroll";
+import UseTransform from "./components/useScroll/UseTransform";
+import SlidingBox from "./practice/Transformations/box";
+import BouncingCircle from "./practice/Transformations/BouncingCircle";
+import SpinningIcon from "./practice/Transformations/SpinningIcon";
+import SkewRectangle from "./practice/Transformations/SkewRectangle";
+import ComplexAnimation from "./practice/Transformations/ComplexAnimation";
+import SequentialBoxes from "./practice/Transformations/SequentialBoxes";
+import FadeComponent from "./practice/Transitions/FadeComponent";
+import Sidebar from "./practice/Transitions/Sidebar";
+import Modal from "./practice/Transitions/Modal";
 const App = () => {
   return (
     <>
@@ -32,7 +45,20 @@ const App = () => {
       {/* <AnimatedShaped /> */}
       {/* <StaggerAnimation/> */}
         {/* <AnimatedGallery /> */}
-        <RangeSlider />
+        {/* <RangeSlider /> */}
+        {/* <DragMeBox /> */}
+        {/* <AnimationScroll /> */}
+        {/* <UseAnimationScroll /> */}
+        {/* <UseTransform /> */}
+        {/* <SlidingBox /> */}
+        {/* <BouncingCircle /> */}
+        {/* <SpinningIcon/> */}
+        {/* <SkewRectangle /> */}
+        {/* <ComplexAnimation /> */}
+        {/* <SequentialBoxes /> */}
+        {/* <FadeComponent /> */}
+        {/* <Sidebar /> */}
+        <Modal />
     </>
   );
 };
