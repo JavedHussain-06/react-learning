@@ -23,6 +23,8 @@ import FadeComponent from "./practice/Transitions/FadeComponent";
 import Sidebar from "./practice/Transitions/Sidebar";
 import Modal from "./practice/Transitions/Modal";
 import ResponsiveButton from "./practice/Transitions/ResponsiveButton";
+import Accordion from "./practice/Transitions/Accordion";
+import CopyButton from "./practice/Transitions/CopyButton";
 const App = () => {
   return (
     <>
@@ -60,7 +62,9 @@ const App = () => {
         {/* <FadeComponent /> */}
         {/* <Sidebar /> */}
         {/* <Modal /> */}
-        <ResponsiveButton />
+        {/* <ResponsiveButton /> */}
+        {/* <Accordion /> */}
+        <CopyButton />
     </>
   );
 };
