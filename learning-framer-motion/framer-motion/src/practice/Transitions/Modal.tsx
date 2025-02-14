@@ -1,50 +1,45 @@
 import { useState } from "react";
-import {  motion } from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
 
-const Modal = () => {
-  const [isOpen, setIsOpen] = useState(false);
 
-  return (
-    <div className="flex flex-col items-center">
-      <motion.button
-        className="mb-4 p-2 bg-blue-500 text-white rounded hover:bg-blue-400"
-        onClick={() => setIsOpen(true)}
-        whileHover={{scale:1.2}}
-        whileTap={{scale:0.8 , opacity:0}}
-      >
-        Open Modal
-      </motion.button>
-      {isOpen && (
-        <motion.div
-          className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"
+  const Modal = () => {
+    const [isOpen, setIsOpen] = useState(false);
+  
+    return (
+      <div className="flex flex-col items-center">
+        <button
+          className="mb-4 p-2 bg-teal-500 text-white rounded"
+          onClick={() => setIsOpen(true)}
         >
-
+          Open Modal
+        </button>
+        <AnimatePresence >
+        {isOpen && (
           <motion.div
-            className="bg-white p-4 rounded text-black"
-            onClick={(e) => e.stopPropagation()}
-            initial={{ y: "-100vh" }}
-            animate={{ y: "0vh" }}
-            exit={{ y: "100vh" }}
-            transition={{ duration: 0.5 }}
-            whileHover={{scale: 1.5}}
-
+            className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"
+            onClick={() => setIsOpen(false)}
           >
-            <h2 className="text-lg font-bold ">Modal Title</h2>
-            <p>This is a modal window!</p>
-            <motion.button
-              className="mt-4 p-2 bg-red-500 text-white rounded"
-              onClick={() => setIsOpen(false)}
-              whileHover={{background : "#d14d4d",  scale: 1.2}}
-              transition={{duration: 0.5}}
+            <motion.div
+              className="bg-white p-4 rounded text-black"
+              onClick={(e) => e.stopPropagation()}
+              initial={{ y: "-100vh" }}
+              animate={{ y: "0vh" }}
+              exit={{ y: "100vh" }}
+              transition={{ duration: 0.5 }}
             >
-              Close
-            </motion.button>
+              <h2 className="text-lg font-bold">Modal Title</h2>
+              <p>This is a modal window!</p>
+              <button
+                className="mt-4 p-2 bg-red-500 text-white rounded"
+                onClick={() => setIsOpen(false)}
+              >
+                Close
+              </button>
+            </motion.div>
           </motion.div>
-
-        </motion.div>
-      )}
-    </div>
-  );
-};
-
+        )}
+        </AnimatePresence>
+      </div>
+    );
+  };
 export default Modal;

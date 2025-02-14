@@ -22,6 +22,7 @@ import SequentialBoxes from "./practice/Transformations/SequentialBoxes";
 import FadeComponent from "./practice/Transitions/FadeComponent";
 import Sidebar from "./practice/Transitions/Sidebar";
 import Modal from "./practice/Transitions/Modal";
+import ResponsiveButton from "./practice/Transitions/ResponsiveButton";
 const App = () => {
   return (
     <>
@@ -58,7 +59,8 @@ const App = () => {
         {/* <SequentialBoxes /> */}
         {/* <FadeComponent /> */}
         {/* <Sidebar /> */}
-        <Modal />
+        {/* <Modal /> */}
+        <ResponsiveButton />
     </>
   );
 };
