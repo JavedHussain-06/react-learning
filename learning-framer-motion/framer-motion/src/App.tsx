@@ -25,6 +25,7 @@ import Modal from "./practice/Transitions/Modal";
 import ResponsiveButton from "./practice/Transitions/ResponsiveButton";
 import Accordion from "./practice/Transitions/Accordion";
 import CopyButton from "./practice/Transitions/CopyButton";
+import ToastNotification from "./practice/Transitions/ToastNotification";
 const App = () => {
   return (
     <>
@@ -64,7 +65,8 @@ const App = () => {
         {/* <Modal /> */}
         {/* <ResponsiveButton /> */}
         {/* <Accordion /> */}
-        <CopyButton />
+        {/* <CopyButton /> */}
+        <ToastNotification />
     </>
   );
 };
