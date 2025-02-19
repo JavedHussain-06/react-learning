@@ -26,6 +26,8 @@ import ResponsiveButton from "./practice/Transitions/ResponsiveButton";
 import Accordion from "./practice/Transitions/Accordion";
 import CopyButton from "./practice/Transitions/CopyButton";
 import ToastNotification from "./practice/Transitions/ToastNotification";
+import BouncingBall from "./practice/keyframes/BouncingBall";
+import PulsatingButton from "./practice/keyframes/PulsatingButton";
 const App = () => {
   return (
     <>
@@ -66,7 +68,9 @@ const App = () => {
         {/* <ResponsiveButton /> */}
         {/* <Accordion /> */}
         {/* <CopyButton /> */}
-        <ToastNotification />
+        {/* <ToastNotification /> */}
+        {/* <BouncingBall /> */}
+        <PulsatingButton />
     </>
   );
 };

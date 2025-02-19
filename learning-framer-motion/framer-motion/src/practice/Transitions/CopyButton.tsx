@@ -11,7 +11,7 @@ const CopyButton = ({ textToCopy = "Text to copy" }: { textToCopy?: string }) =>
     } catch (err) {
       console.error('Failed to copy text: ', err);
     }
-  };
+  }; 
 
   useEffect(() => {
     if (showCopied) {
