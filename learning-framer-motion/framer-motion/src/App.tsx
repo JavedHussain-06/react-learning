@@ -28,6 +28,22 @@ import CopyButton from "./practice/Transitions/CopyButton";
 import ToastNotification from "./practice/Transitions/ToastNotification";
 import BouncingBall from "./practice/keyframes/BouncingBall";
 import PulsatingButton from "./practice/keyframes/PulsatingButton";
+import ColorChangeSquare from "./practice/keyframes/ColorChangeSquare";
+import SlidingText from "./practice/keyframes/SlidingText";
+import ZigzagAnimation from "./practice/keyframes/ZigZagAnimation";
+import WaveEffect from "./practice/keyframes/WaveEffect";
+import AnimatedBackground from "./practice/keyframes/AnimatedBackground";
+import FadeInComponent from "./practice/Variants/FadeInComponent";
+import ToggleSwitch from "./practice/Variants/ToggleSwitch";
+import SlidingMenu from "./practice/Variants/SlidingMenu";
+import Tooltip from "./practice/Variants/ToolTip";
+import DynamicList from "./practice/Variants/DynamicList";
+import SwipeableCard from "./practice/Gestures/SwipeableCard";
+import DraggableBox from "./practice/Gestures/DraggableBox";
+import RotateOnDrag from "./practice/Gestures/RotateOnDrag";
+import TapToChangeColor from "./practice/Gestures/TapToChangeColor";
+import LongPressToChangeSize from "./practice/Gestures/LongPressToChangeSize";
+import GestureBasedImageGallery from "./practice/Gestures/GestureBasedImageGallery";
 const App = () => {
   return (
     <>
@@ -70,7 +86,23 @@ const App = () => {
         {/* <CopyButton /> */}
         {/* <ToastNotification /> */}
         {/* <BouncingBall /> */}
-        <PulsatingButton />
+        {/* <PulsatingButton /> */}
+        {/* <ColorChangeSquare /> */}
+        {/* <SlidingText /> */}
+        {/* <ZigzagAnimation /> */}
+        {/* <WaveEffect /> */}
+        {/* <AnimatedBackground /> */}
+        {/* <FadeInComponent /> */}
+        {/* <SlidingMenu /> */}
+        {/* <Tooltip /> */}
+        {/* <ToggleSwitch /> */}
+        {/* <DynamicList /> */}
+        {/* <SwipeableCard /> */}
+        {/* <DraggableBox /> */}
+        {/* <RotateOnDrag /> */}
+        <TapToChangeColor />
+        {/* <LongPressToChangeSize /> */}
+        {/* <GestureBasedImageGallery /> */}
     </>
   );
 };

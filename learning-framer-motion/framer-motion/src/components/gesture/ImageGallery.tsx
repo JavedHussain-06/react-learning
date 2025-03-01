@@ -27,7 +27,7 @@ const ImageGallery = () => {
             transition={{ duration: 0.3 }}
           >
             <img src={image.src} alt={image.caption} />
-            <motion.div className="absolute inset-0 p-4 bg-black bg-opacity-50 text-white opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center" 
+            <motion.div className="absolute inset-0 p-4 bg-black bg-opacity-50 text-white opacity-0  hover:opacity-100 transition-opacity duration-300 flex items-center justify-center" 
             whileHover={{ opacity: 1 }}
             transition={{ duration: 0.3 }}
             >
