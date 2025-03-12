@@ -44,9 +44,14 @@ import RotateOnDrag from "./practice/Gestures/RotateOnDrag";
 import TapToChangeColor from "./practice/Gestures/TapToChangeColor";
 import LongPressToChangeSize from "./practice/Gestures/LongPressToChangeSize";
 import GestureBasedImageGallery from "./practice/Gestures/GestureBasedImageGallery";
+import StaggeredList from "./practice/StaggerAnimation/StaggeredList.tsx";
+import StaggeredButtonPress from "./practice/StaggerAnimation/StaggeredButtonPress.tsx";
+import StaggeredImageGallery from "./practice/StaggerAnimation/StaggeredImageGallery.tsx";
+import StaggeredTextReveal from "./practice/StaggerAnimation/StaggerredTextReaveal.tsx";
+import StaggeredGridLayout from "./practice/StaggerAnimation/StaggeredGridLauyout.tsx";
 const App = () => {
   return (
-    <>
+    <div className="w-screen h-screen flex items-center flex-col justify-center bg-gray-800">
       {/* <motion.div className="box" animate={
       {
         scale: [1, 1.5, 1.5, 1, 1],
@@ -100,10 +105,15 @@ const App = () => {
         {/* <SwipeableCard /> */}
         {/* <DraggableBox /> */}
         {/* <RotateOnDrag /> */}
-        <TapToChangeColor />
+        {/* <TapToChangeColor /> */}
         {/* <LongPressToChangeSize /> */}
         {/* <GestureBasedImageGallery /> */}
-    </>
+        {/* <StaggeredList  /> */}
+        <StaggeredButtonPress />
+        {/* <StaggeredImageGallery /> */}
+        {/* <StaggeredTextReveal /> */}
+        {/* <StaggeredGridLayout /> */}
+    </div>
   );
 };
 

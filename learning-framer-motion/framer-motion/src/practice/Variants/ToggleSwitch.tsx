@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 
 const switchVariants = {
   off: { x: 0 },
-  on: { x: 70 },
+  on: { x: 80 },
 };
 
 const ToggleSwitch = () => {

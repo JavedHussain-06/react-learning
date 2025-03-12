@@ -5,15 +5,18 @@ export const AnimatedCard = () => {
     <motion.div
       className="max-w-sm bg-gray-400/10 backdrop-blur-lg  h-68 border-2  border-red-50 rounded-xl cursor-pointer"
       drag
-      dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+      dragConstraints={{ left: -50, right: 50, top: -50, bottom: 50 }}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
-      transition={{ type: "spring", stiffness: 650 }}
+      dragElastic={0.5}
+      // transition={{ type: "spring", stiffness: 650 }}
+      transition={{duration: 0.5
+      }}
     >
       <motion.div
         className=" h-68  overflow-hidden rounded-xl"
         initial={{ rotate: 0 }}
-        whileHover={{ rotate: 3}}
+        // whileHover={{ rotate: 3}}
       
       >
         <img

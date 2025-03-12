@@ -11,7 +11,8 @@ const Loading = () => {
           animate={{ y: [0, -10, 0] }}
           transition={{
             repeat: Infinity,
-            repeatDelay: index * 0.2,
+            delay: index * 0.1,
+            reverseType: "reverse",
             ease: "easeInOut",
             duration: 0.5,
           }}

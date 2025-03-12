@@ -10,7 +10,7 @@ const images = [
 const GestureBasedImageGallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleSwipe = (_: any, info: any) => {
+  const handleSwipe = (_: MouseEvent | TouchEvent, info: { offset: { y: number } }) => {
     if (info.offset.y > 100) {
       setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
     } else if (info.offset.y < -100) {
