@@ -49,9 +49,17 @@ import StaggeredButtonPress from "./practice/StaggerAnimation/StaggeredButtonPre
 import StaggeredImageGallery from "./practice/StaggerAnimation/StaggeredImageGallery.tsx";
 import StaggeredTextReveal from "./practice/StaggerAnimation/StaggerredTextReaveal.tsx";
 import StaggeredGridLayout from "./practice/StaggerAnimation/StaggeredGridLauyout.tsx";
+import UseDraggableBox from "./practice/UseMotionValue/UseDraggableBox.tsx";
+import HoverLinkedScale from "./practice/UseMotionValue/HoverLinkedScale.tsx";
+import SpringAnimatedPosition from "./practice/UseMotionValue/SpringAnimatedPostion.tsx";
+import DynamicRotation from "./practice/UseMotionValue/DynamicRotation.tsx";
+import InViewStaggeredList from "./practice/WhileInView/InViewStaggeredList.tsx";
+import InViewCardFlip from "./practice/WhileInView/InViewCardFlip.tsx";
+import TimelineAnimation from "./practice/WhileInView/TimeLineAnimation.tsx";
+import InteractiveCards from "./practice/WhileInView/InteractiveCard.tsx";
 const App = () => {
   return (
-    <div className="w-screen h-screen flex items-center flex-col justify-center bg-gray-800">
+    <div className="w-screen h-[2000vh] flex items-center flex-col justify-center bg-gray-800">
       {/* <motion.div className="box" animate={
       {
         scale: [1, 1.5, 1.5, 1, 1],
@@ -109,10 +117,18 @@ const App = () => {
         {/* <LongPressToChangeSize /> */}
         {/* <GestureBasedImageGallery /> */}
         {/* <StaggeredList  /> */}
-        <StaggeredButtonPress />
+        {/* <StaggeredButtonPress /> */}
         {/* <StaggeredImageGallery /> */}
         {/* <StaggeredTextReveal /> */}
         {/* <StaggeredGridLayout /> */}
+        <UseDraggableBox />
+        {/* <HoverLinkedScale /> */}
+        {/* <SpringAnimatedPosition /> */}
+        {/* <DynamicRotation /> */}
+        {/* <InViewStaggeredList /> */}
+        <InViewCardFlip />
+        <TimelineAnimation />
+        <InteractiveCards />
     </div>
   );
 };
